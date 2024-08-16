@@ -11,7 +11,12 @@ class Blog extends Model
 
     protected $fillable = [
         'judul',
+        'user_id',
         'konten',
-        'gambar'
+        'gambar',
     ];
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 }
