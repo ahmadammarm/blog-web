@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+@section('title', 'Register')
 @section('content')
 
 
@@ -30,5 +31,7 @@
     <div class="mt-4">
         <a href="{{ route('login') }}" class="text-teal-500 hover:text-teal-600">Already have an account? Login</a>
     </div>
+
+    <a href="{{ url('/') }}" class="mt-4 p-3 text-white font-bold bg-teal-500 rounded-xl hover:shadow-lg">Kembali ke Home</a>
 </div>
 @endsection

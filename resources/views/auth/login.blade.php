@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+@section('title', 'Login')
 @section('content')
 <div class="flex justify-center items-center min-h-screen flex-col">
     <form class="mt-4 w-full max-w-lg p-5 lg:p-0" method="POST" action="{{ route('login') }}">
@@ -19,5 +20,7 @@
     <div class="mt-4">
         <a href="{{ route('register') }}" class="text-teal-500 hover:text-teal-600">Create an account</a>
     </div>
+
+    <a href="{{ url('/') }}" class="mt-4 p-3 text-white font-bold bg-teal-500 rounded-xl hover:shadow-lg">Kembali ke Home</a>
 </div>
 @endsection
